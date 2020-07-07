@@ -1,8 +1,8 @@
 public interface ICar
 {
-    string Start();
-    string Accelerate();
-    string Stop();
+    void Start();
+    void Accelerate();
+    void Stop();
     string TransmissionType { get;set; }
 
 } 

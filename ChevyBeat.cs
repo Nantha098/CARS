@@ -1,29 +1,29 @@
 using System;
 public class ChevyBeat : Engine, ICar
 {
-    private string _name;
-    public ChevyBeat(string name){
-        this._name=name;
+    private string Tname;
+    public ChevyBeat(string Type) {
+        this.Tname=Type;
     }
-    public string TransmissionType{
-       get { return _name;}
-        set { _name = value; }
+    public string TransmissionType {
+       get { return Tname;}
+       set { Tname = value;}
     }
-    public string Start()
+    public void Start()
     {
-        return string.Format("Beat is Started");
+        Console.WriteLine("Beat is Started!");
     }
-    public string Accelerate()
+    public void Accelerate()
     {
-        return string.Format("Beat is moving");
+        Console.WriteLine("Beat is moving!");
     }
-    public string Stop()
+    public void Stop()
     {
-        return string.Format("Beat is Stoped");
+        Console.WriteLine("Beat is Stoped!");
     }
     public override void NewEngine()
     {
-        Console.WriteLine("Petrol Engine is added");
+        Console.WriteLine("Petrol Engine is added...");
     }
 
 

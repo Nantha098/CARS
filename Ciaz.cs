@@ -1,31 +1,31 @@
 using System;
 public class Ciaz : Engine, ICar
 {
-    private string _name ;
-    public Ciaz(string name){
-        this._name=name;
+    private string Tname ;
+    public Ciaz(string Type){
+        this.Tname=Type;
 
     }
     public string TransmissionType{
-        get { return _name;}
-        set { _name = value; }
+        get { return Tname;}
+        set { Tname = value;}
     }
 
-    public string Start()
+    public void Start()
     {
-        return string.Format("Ciaz is Started");
+        Console.WriteLine("Ciaz is Started!");
     }
-    public string Accelerate()
+    public void Accelerate()
     {
-        return string.Format("Ciaz is moving");
+        Console.WriteLine("Ciaz is moving!");
     }
-    public string Stop()
+    public void Stop()
     {
-        return string.Format("Ciaz is Stoped");
+        Console.WriteLine("Ciaz is Stoped!");
     }
 
     public override void NewEngine()
     {
-        Console.WriteLine("Petrol Engine is added");
+        Console.WriteLine("Petrol Engine is added...");
     }
 }

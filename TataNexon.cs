@@ -1,29 +1,29 @@
 using System;
 public class TataNexon :Engine, ICar
 {
-    private string _name;
-    public TataNexon(string name){
-        this._name=name;
+    private string Tname;
+    public TataNexon(string Type) {
+        this.Tname=Type;
     }
-    public string TransmissionType{
-     get { return _name;}
-        set { _name = value; }
+    public string TransmissionType {
+        get { return Tname;}
+        set { Tname = value;}
     }
-    public string Start()
+    public void Start()
     {
-        return string.Format("Nexon is Started");
+        Console.WriteLine("Nexon is Started!");
     }
-    public string Accelerate()
+    public void Accelerate()
     {
-        return string.Format("Nexon is moving");
+        Console.WriteLine("Nexon is moving!");
     }
-    public string Stop()
+    public void Stop()
     {
-        return string.Format("Nexon is Stoped");
+        Console.WriteLine("Nexon is Stoped!");
     }
     public override void NewEngine()
     {
-        Console.WriteLine("Diesel Engine is added");
+        Console.WriteLine("Diesel Engine is added...");
     }
 
 

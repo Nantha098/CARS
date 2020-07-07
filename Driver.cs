@@ -4,28 +4,28 @@ public class Driver
     
     public static void Main()
     {
-        Ciaz obj = new Ciaz("Automatic Transmission");
+        Ciaz obj = new Ciaz("It is in Automatic Transmission");
         obj.NewEngine();
+        obj.Start();
+        obj.Accelerate();
+        obj.Stop();
         Console.WriteLine(obj.TransmissionType);
-        Console.WriteLine(obj.Start());
-        Console.WriteLine(obj.Accelerate());
-        Console.WriteLine(obj.Stop());
         Console.WriteLine();
 
-        TataNexon nexon = new TataNexon("Manual Transmission");
+        TataNexon nexon = new TataNexon("It is in Manual Transmission");
         nexon.NewEngine();
+        nexon.Start();
+        nexon.Accelerate();
+        nexon.Stop();
         Console.WriteLine(nexon.TransmissionType);
-        Console.WriteLine(nexon.Start());
-        Console.WriteLine(nexon.Accelerate());
-        Console.WriteLine(nexon.Stop());
         Console.WriteLine();
         
-        ChevyBeat beat = new ChevyBeat("Automatic Transmission");
+        ChevyBeat beat = new ChevyBeat("It is in Automatic Transmission");
         beat.NewEngine();
+        beat.Start();
+        beat.Accelerate();
+        beat.Stop();
         Console.WriteLine(beat.TransmissionType);
-        Console.WriteLine(beat.Start());
-        Console.WriteLine(beat.Accelerate());
-        Console.WriteLine(beat.Stop());
         Console.WriteLine();
        
     }
