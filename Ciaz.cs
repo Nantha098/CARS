@@ -4,15 +4,15 @@ public class Ciaz : Engine, ICar
 
     public string Start()
     {
-        return string.Format("Car is Started");
+        return string.Format("Ciaz is Started");
     }
     public string Accelerate()
     {
-        return string.Format("Car is moving");
+        return string.Format("Ciaz is moving");
     }
     public string Stop()
     {
-        return string.Format("Car is Stoped");
+        return string.Format("Ciaz is Stoped");
     }
 
     public override void NewEngine()
