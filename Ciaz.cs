@@ -1,6 +1,15 @@
 using System;
 public class Ciaz : Engine, ICar
 {
+    private string _name ;
+    public Ciaz(string name){
+        this._name=name;
+
+    }
+    public string TransmissionType{
+        get { return _name;}
+        set { _name = value; }
+    }
 
     public string Start()
     {

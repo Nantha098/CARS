@@ -1,9 +1,14 @@
 using System;
 public class ChevyBeat : Engine, ICar
 {
-
-
-    
+    private string _name;
+    public ChevyBeat(string name){
+        this._name=name;
+    }
+    public string TransmissionType{
+       get { return _name;}
+        set { _name = value; }
+    }
     public string Start()
     {
         return string.Format("Beat is Started");
